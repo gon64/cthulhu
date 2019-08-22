@@ -1,4 +1,5 @@
 node_modules
 css
 js
-jquery
+jquery.min.js
+.DS_Store
