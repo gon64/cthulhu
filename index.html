@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Starter Template · Bootstrap</title>
+    <title>La Llamada de Cthulhu 7ª Ed. · Generador de Investigadores</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" >
     
 </head>
@@ -115,17 +115,539 @@
             <div class="container">
                 <h3>Características Secundarias</h3>
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-3">
                         <label for="sue"><h5>Suerte</h5></label>
                         <input type="text" class="form-control form-control-lg characterystic" id="sue" placeholder="3d6 x5"></input>
                     </div>
-                    <div class="col-4">
+                    <div class="col-3">
                         <label for="pv"><h5>Puntos de Vida</h5></label>
                         <input type="text" class="form-control form-control-lg characterystic" id="pv" placeholder="(TAM + CON) / 2"></input>
                     </div>
-                    <div class="col-4">
+                    <div class="col-3">
                         <label for="cor"><h5>Cordura</h5></label>
                         <input type="text" class="form-control form-control-lg characterystic" id="cor" placeholder="POD"></input>
+                    </div>
+                    <div class="col-3">
+                            <label for="bd"><h5>Bonificación al Daño</h5></label>
+                            <input type="text" class="form-control form-control-lg characterystic" id="bd" placeholder="Según tabla"></input>
+                        </div>
+                </div>
+            </div>
+            <div class="container">
+                <h3>Habilidades</h3>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="antropologia">Antropología (01%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="antropologia">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="antropologia-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label><h6>Armas de Fuego</h6></label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="armacorta">Arma corta (20%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="armacorta">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="armacorta-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="armacorta">Fusil / Escopeta (25%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="fusilescopeta">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="fusilescopeta-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="arqueologia">Arqueología (01%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="arqueologia">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="arqueologia-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="arteartesania">Arte /Artesanía (05%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="arteartesania">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="arteartesania-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="arteartesania">Arte /Artesanía (05%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="arteartesania">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="arteartesania-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="buscarlibros">Buscar libros (30%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="buscarlibros">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="buscarlibros-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="cerrajeria">Cerrajerías (01%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="cerrajeria">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="cerrajeria-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="charlataneria">Charlatanería (05%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="charlataneria">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="charlataneria-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="ciencia">Ciencia (01%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="ciencia">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="ciencia-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="cienciasocultas">Ciencias ocultas (05%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="cienciasocultas">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="cienciasocultas-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label><h6>Combatir</h6></label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="pelea">Pelea (25%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="pelea">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="pelea-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="conducirautomovil">Conducir automóvil (20%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="conducirautomovil">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="conducirautomovil-half">
+                            </div>
+                        </div>    
+                    </div>
+
+                    <div class="col">
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="conducirmaquinaria">Conducir maquinaria (01%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="conducirmaquinaria">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="conducirmaquinaria-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="contabilidad">Contabilidad (05%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="contabilidad">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="contabilidad-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="credito">Crédito (00%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="credito">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="credito-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="derecho">Derecho (05%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="derecho">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="derecho-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="descubrir">Descubrir (25%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="descubrir">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="descubrir-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="disfrazarse">Disfrazarse (05%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="disfrazarse">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="disfrazarse-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="electricidad">Electricidad (10%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="electricidad">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="electricidad-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="encanto">Encanto (15%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="encanto">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="encanto-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="equitacion">Equitación (15%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="equitacion">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="equitacion-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="escuchar">Escuchar (20%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="escuchar">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="escuchar-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="esquivar">Esquivar (DES/2)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="esquivar" placeholder="DES/2">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="esquivar-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="historia">Historia (05%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="historia">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="historia-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="intimidar">Intimidar (15%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="intimidar">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="intimidar-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="juegodemanos">Juego de manos (15%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="juegodemanos">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="juegodemanos-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="lanzar">Lanzar (20%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="lanzar">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="lanzar-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="lenguapropia">Lengua propia (EDU)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="lenguapropia" placeholder="EDU">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="lenguapropia-half">
+                            </div>
+                        </div>       
+                    </div>
+
+                    <div class="col">
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="otraslenguas">Otras lenguas (01%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="otraslenguas" >
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="otraslenguas-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="mecanica">Mecánica (10%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="mecanica" >
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="mecanica-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="medicina">Medicina (01%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="medicina" >
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="medicina-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="mitosdecthulhu">Mitos de Cthulhu (00%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="mitosdecthulhu" placeholder="0">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="mitosdecthulhu-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="nadar">Nadar (20%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="nadar" >
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="nadar-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="naturaleza">Naturaleza (10%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="naturaleza" >
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="naturaleza-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="orientarse">Orientarse (10%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="orientarse" >
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="orientarse-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="persuasion">Persuasión (10%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="persuasion" >
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="persuasion-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="pilotar">Pilotar (01%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="pilotar" >
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="pilotar-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="psicologia">Psicología (10%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="psicologia" >
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="psicologia-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="saltar">Saltar (20%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="saltar" >
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="saltar-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="seguirrastros">Seguir rastros (10%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="seguirrastros" >
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="seguirrastros-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="sigilo">Sigilo (20%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="sigilo" >
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="sigilo-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="supervivencia">Supervivencia (10%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="supervivencia" >
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="supervivencia-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="tasacion">Tasación (05%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="tasacion" >
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="tasacion-half">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="trepar">Trepar (05%)</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="trepar" >
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="trepar-half">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
